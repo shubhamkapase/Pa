@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <p18f4550.h>
+void main (void)
+{
+int temp,i;
+int sourcel[] = {0*21, 0*22, 0*23, 0*24, 0*25};
+int dest[] = {0*00, 0*00, 0*00, 0*00, 0*00};
+for (i=0; i<=4;i++)
+{
+temp=sourcel[i];
+sourcel[i] = dest [i];
+dest[i] = temp;
+}
+}

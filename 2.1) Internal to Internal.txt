@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <p18f4550.h>
+void main (void)
+{
+int temp,i;
+int source [] = {0*21, 0*22, 0*23, 0*24, 0*25};  //source mem
+int dest [] = {0*00, 0*00, 0*00, 0*00, 0*00};    //destination mem
+for (i=0; i<=4;i++)                              //counter=5
+{ 
+dest[i] = source[i];           //source to destination
+}
+}
